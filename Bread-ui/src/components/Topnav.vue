@@ -27,7 +27,10 @@ export default {
   background: pink;
   display: flex;
   padding: 16px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
   justify-content: center;
   align-items: center;
@@ -46,7 +49,7 @@ export default {
   > .toggleAside {
     width: 24px;
     height: 24px;
-    background: aqua;
+    background: red;
     position: absolute;
     left: 16px;
     top: 50%;
