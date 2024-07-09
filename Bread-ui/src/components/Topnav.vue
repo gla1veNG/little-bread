@@ -17,7 +17,6 @@ export default {
     const toggleMenu = () => {
       asideVisible.value = !asideVisible.value;
     }
-    console.log('asideVisible:'+asideVisible.value);
     return {toggleMenu};
   },
 };
