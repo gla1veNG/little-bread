@@ -1,9 +1,16 @@
 <template>
+  <h1>示例1</h1>
   <div>
     <Button>您好</Button>
     <Button theme="button">您好</Button>
     <Button theme="link">您好</Button>
     <Button theme="text">您好</Button>
+  </div>
+  <h1>示例2</h1>
+  <div>
+    <Button size="big">大大大</Button>
+    <Button>普通普通</Button>
+    <Button size="small">小小小</Button>
   </div>
 </template>
 
@@ -21,6 +28,6 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 
 </style>

@@ -1,6 +1,5 @@
 <template>
-  <button @click="toggle" :class="{checked:value}"><span></span></button>
-  <div>{{ value }}</div>
+  <button class="bread-switch" @click="toggle" :class="{'bread-checked':value}"><span></span></button>
 </template>
 
 <script lang="ts">
@@ -22,7 +21,7 @@ export default {
 <style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-button {
+.bread-switch {
   height: $h;
   width: $h*2;
   border: none;
@@ -41,7 +40,7 @@ button {
     transition: all 0.5s;
   }
 
-  &.checked {
+  &.bread-checked{
     background: #3cc53c;
 
     > span {
@@ -55,7 +54,7 @@ button {
     }
   }
 
-  &.checked:active {
+  &.bread-checked:active {
     > span {
       width: $h2+4px;
       margin-left: -4px;
