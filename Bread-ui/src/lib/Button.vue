@@ -1,19 +1,22 @@
 <template>
-  <div>
-    <button v-bind="$attrs">
-      <slot/>
-    </button>
-  </div>
+  <button class="bread-button" :class="`theme-${theme}`">
+    <slot/>
+  </button>
 </template>
 
-<script  lang="ts">
+<script lang="ts">
 export default {
-  inheritAttrs:false
-}
+  props: {
+    theme: {
+      type: String,
+      default: 'button',
+    }
+  },
+};
 </script>
 
 <style scoped lang="scss">
-div{
+div {
   border: 1px solid red;
 }
 </style>
