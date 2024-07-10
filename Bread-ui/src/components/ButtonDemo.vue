@@ -1,11 +1,17 @@
 <template>
   <div>
-    Button示例
+    <Button>
+      您好
+    </Button>
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import Button from '../lib/Button.vue';
 
+export default {
+  components: {Button},
+};
 </script>
 
 <style scoped lang="scss">
