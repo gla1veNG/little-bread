@@ -1,5 +1,5 @@
 <template>
-  <button class="bread-button" :class="classes">
+  <button class="bread-button" :class="classes" :disabled="disabled">
     <slot/>
   </button>
 </template>
@@ -20,6 +20,10 @@ export default {
     level:{
       type:String,
       default:'normal',
+    },
+    disabled:{
+      type:Boolean,
+      default:'false',
     }
   },
   setup(props){
@@ -43,6 +47,7 @@ $color: #333;
 $blue: #40a9ff;
 $radius: 4px;
 $red:red;
+$grey: grey;
 .bread-button {
   box-sizing: border-box;
   height: $h;
@@ -144,6 +149,21 @@ $red:red;
       &:focus {
         color: darken($red, 10%);
       }
+    }
+  }
+  &.bread-theme-button {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+      &:hover {
+        border-color: $grey;
+      }
+    }
+  }
+  &.bread-theme-link, &.bread-theme-text {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
     }
   }
 }
