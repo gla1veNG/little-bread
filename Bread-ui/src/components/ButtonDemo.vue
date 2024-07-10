@@ -1,7 +1,7 @@
 <template>
   <h1>示例1</h1>
   <div>
-    <Button>您好</Button>
+    <Button @click="onClick">您好</Button>
     <Button theme="button">您好</Button>
     <Button theme="link">您好</Button>
     <Button theme="text">您好</Button>
@@ -44,6 +44,11 @@
     <Button theme="link" disabled>禁用链接按钮</Button>
     <Button theme="text" disabled>禁用按钮</Button>
   </div>
+  <h1>示例5</h1>
+  <div>
+    <Button loading>加载中</Button>
+    <Button>加载完毕</Button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -51,12 +56,12 @@ import Button from '../lib/Button.vue';
 
 export default {
   components: {Button},
-  setup() {
-      const onClick = ()=>{
-        console.log('您好');
-      }
-      return {onClick}
-  },
+  setup(){
+    const onClick=()=>{
+      console.log('hi')
+    }
+    return{onClick}
+  }
 };
 </script>
 
