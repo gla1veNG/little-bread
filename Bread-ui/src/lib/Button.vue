@@ -1,11 +1,19 @@
 <template>
-  <button><slot/></button>
+  <div>
+    <button v-bind="$attrs">
+      <slot/>
+    </button>
+  </div>
 </template>
 
-<script setup lang="ts">
-
+<script  lang="ts">
+export default {
+  inheritAttrs:false
+}
 </script>
 
 <style scoped lang="scss">
-
+div{
+  border: 1px solid red;
+}
 </style>
