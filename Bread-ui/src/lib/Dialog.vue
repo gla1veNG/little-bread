@@ -3,10 +3,9 @@
     <div class="bread-dialog-overlay" @click="onClickOverlay"></div>
     <div class="bread-dialog-wrapper">
       <div class="bread-dialog">
-        <header>标题 <span @click="close" class="bread-dialog-close"></span></header>
+        <header><slot name="title"/><span @click="close" class="bread-dialog-close"></span></header>
         <main>
-          <p>第一行字</p>
-          <p>第二行字</p>
+          <slot name="content"/>
         </main>
         <footer>
           <Button level="main" @click="ok">OK</Button>
@@ -30,10 +29,10 @@ export default {
       type: Boolean,
       default: true
     },
-    ok:{
+    ok: {
       type: Function,
     },
-    cancel:{
+    cancel: {
       type: Function,
     }
   },
@@ -48,7 +47,9 @@ export default {
       }
     };
     const ok = () => {
-      if(props.ok?.() != false){close()}
+      if (props.ok?.() != false) {
+        close();
+      }
     };
     const cancel = () => {
       context.emit('cancel');
