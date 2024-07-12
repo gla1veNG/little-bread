@@ -3,9 +3,9 @@
     Dialog示例
   </div>
   <h1>示例1</h1>
-  <div style="position: relative; z-index:1">
+  <div>
     <Button @click="toggle">toggle</Button>
-    <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
+    <Dialog v-model:visible="x" :closeOnClickOverlay="x" :ok="f1" :cancel="f2">
       <template v-slot:title>
         <strong>加粗的标题</strong>
       </template>
@@ -33,7 +33,7 @@ export default {
       x.value = !x.value;
     };
     const f1 = () => {
-      return false;
+      return x;
     };
     const f2 = () => {
     };

@@ -16,12 +16,12 @@ export default {
     const asideVisible = inject<Ref<boolean>>('asideVisible');
     const toggleMenu = () => {
       asideVisible.value = !asideVisible.value;
-    }
+    };
     return {toggleMenu};
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .topnav {
   background: pink;
   display: flex;
@@ -55,10 +55,16 @@ export default {
     transform: translateY(-50%);
     display: none;
   }
-  @media (max-width: 500px){
-    >.menu{display:none;}
-    >.logo{margin: 0 auto;}
-    >.toggleAside{  display: inline-block;}
+  @media (max-width: 500px) {
+    > .menu {
+      display: none;
+    }
+    > .logo {
+      margin: 0 auto;
+    }
+    > .toggleAside {
+      display: inline-block;
+    }
   }
 }
 </style>
