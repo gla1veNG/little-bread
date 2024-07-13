@@ -57,7 +57,7 @@ $color: #007974;
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
-  margin: 120px auto;
+  margin: 64px auto;
   width: 400px;
   @media (min-width: 800px) {
     width: 800px;
@@ -72,7 +72,7 @@ $color: #007974;
       width: 400px;
       margin: 16px 0;
       display: grid;
-      justify-content: start;
+      justify-content: flex-start;
       align-content: space-between;
       grid-template-areas:
         "icon title"

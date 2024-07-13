@@ -1,17 +1,15 @@
 <template>
   <div class="topnav">
-    <div class="logo">
+    <router-link to="/" class="logo">
       <svg class="icon"><use xlink:href="#icon-bread"></use></svg>
-    </div>
+      <h3>Bread-ui</h3>
+    </router-link>
     <ul class="menu">
-      <li>菜单1</li>
-      <li>菜单2</li>
       <li><router-link to="/doc">文档</router-link></li>
     </ul>
     <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
       <use xlink:href="#icon-Menu"></use>
     </svg>
-<!--    <span v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu"></span>-->
   </div>
 </template>
 <script lang="ts">
@@ -47,11 +45,15 @@ $color:#007974;
   justify-content: center;
   align-items: center;
   > .logo {
-    max-width: 6em;
+    display: flex;
+    max-width: 8em;
     margin-right: auto;
+    flex-wrap: wrap;
+    align-items: center;
     >svg{
       width: 32px;
       height: 32px;
+      margin-right: 2px;
     }
   }
   > .menu {
@@ -76,7 +78,14 @@ $color:#007974;
       display: none;
     }
     > .logo {
+      max-width: 6em;
       margin: 0 auto;
+      >h3{
+        margin: 0 auto;
+      }
+      >svg{
+        margin: 0 auto;
+      }
     }
     > .toggleAside {
       display: inline-block;
