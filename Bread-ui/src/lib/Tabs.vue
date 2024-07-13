@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import Tab from './Tab.vue';
-import {ref, onMounted, onUpdated, watchEffect} from 'vue';
+import {ref, onMounted,watchEffect} from 'vue';
 
 export default {
   props: {
