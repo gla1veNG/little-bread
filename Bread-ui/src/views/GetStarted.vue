@@ -1,9 +1,13 @@
 <template>
-  <div>GetStarted</div>
+  <article class="markdown-body" v-html="md"></article>
 </template>
-
-<script setup lang="ts">
-
+<script>
+import md from '../markdown/intro.md'
+export default {
+  data(){
+    return{md}
+  }
+}
 </script>
 
 <style scoped lang="scss">
