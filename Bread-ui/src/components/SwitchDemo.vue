@@ -10,7 +10,7 @@
         <Button>查看代码</Button>
       </div>
       <div class="demo-code">
-        <pre>{{Switch1Demo.__sourceCode}}</pre>
+        <pre class="language-html" v-html="Prism.highlight(Switch1Demo.__sourceCode,Prism.languages.html,'html')"></pre>
       </div>
     </div>
     <div class="demo">
@@ -22,17 +22,19 @@
         <Button>查看代码</Button>
       </div>
       <div class="demo-code">
-        <pre>{{Switch2Demo.__sourceCode}}</pre>
+        <pre class="language-html" v-html="Prism.highlight(Switch2Demo.__sourceCode,Prism.languages.html,'html')"></pre>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Switch from '../lib/Switch.vue'
 import Button from '../lib/Button.vue'
 import Switch1Demo from './Switch1.demo.vue';
 import Switch2Demo from './Switch2.demo.vue';
+import 'prismjs';
+import 'prismjs/themes/prism.css';
+const Prism = (window as any).Prism;
 import {ref} from 'vue'
 export default {
   components: {
@@ -40,7 +42,7 @@ export default {
   },
   setup() {
     const bool = ref(false)
-    return {bool,Switch1Demo,Switch2Demo}
+    return {bool,Switch1Demo,Switch2Demo,Prism}
   }
 }
 </script>
