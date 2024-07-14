@@ -1,8 +1,9 @@
 <template>
   <article class="markdown-body" v-html="md"></article>
+  <div>getStarted</div>
 </template>
 <script>
-import md from '../markdown/intro.md'
+import md from '../markdown/get-started.md'
 export default {
   data(){
     return{md}

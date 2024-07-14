@@ -1,5 +1,6 @@
 <template>
   <article class="markdown-body" v-html="md"></article>
+  <div>intro</div>
 </template>
 <script>
 import md from '../markdown/intro.md'
