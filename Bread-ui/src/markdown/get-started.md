@@ -21,7 +21,7 @@ import {Button, Tabs, Switch, Dialog} from "gulu-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "gulu-ui"
+import {Button, Tabs, Switch, Dialog} from "bread-ui"
 export default {
   components: {Button}
 }
