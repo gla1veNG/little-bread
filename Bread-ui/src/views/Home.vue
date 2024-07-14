@@ -48,12 +48,12 @@ export default {
 </script>
 
 <style lang="scss">
-$green: #02bcb0;
+$black: #161616;
 $border-radius: 5px;
-$color: #007974;
+$color: #9d34e0;
 .topnavAndBanner {
-  background: rgb(227, 255, 253);
-  background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+  background: rgb(244,225,255);
+  background: linear-gradient(145deg, rgba(244,225,255,1) 0%, rgba(220,201,235,1) 100%);
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
@@ -108,11 +108,10 @@ $color: #007974;
     a {
       margin: 0 8px;
       color: white;
-      background: $green;
+      background: $black;
       display: inline-block;
       padding: 8px 24px;
       border-radius: $border-radius;
-
       &:hover {
         text-decoration: none;
       }

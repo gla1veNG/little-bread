@@ -32,7 +32,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$color:#007974;
+$color:#9d34e0;
 .topnav {
   color: $color;
   display: flex;
