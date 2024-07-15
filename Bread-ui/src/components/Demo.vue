@@ -1,6 +1,6 @@
 <template>
-    <div class="demo">
-      <h2>{{ component.__sourceCodeTitle }}</h2>
+  <div class="demo">
+      <h2>{{ component?.__sourceCodeTitle }}</h2>
       <div class="demo-component">
         <component :is="component"/>
       </div>
@@ -28,6 +28,7 @@ export default {
   components: {Button},
   setup(props) {
     const html = computed(()=>{
+      //@ts-ignore
       return Prism.highlight(props.component.__sourceCode,Prism.languages.html,'html')
     })
     const codeVisible = ref(false);

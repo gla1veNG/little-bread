@@ -34,6 +34,13 @@
           <h3>代码易读</h3>
           <p>每个组件的源代码都极其简洁</p>
         </li>
+        <li>
+          <svg>
+            <use xlink:href="#icon-markdown"></use>
+          </svg>
+          <h3>文档清晰</h3>
+          <p>读者能够轻松地获取和理解文档的内容</p>
+        </li>
       </ul>
     </div>
   </div>
@@ -62,7 +69,7 @@ $color: #9d34e0;
     width: 800px;
   }
   @media (min-width: 1200px) {
-    width: 1200px;
+    width: inherit;
   }
   >ul {
     display: flex;
@@ -95,19 +102,19 @@ $color: #9d34e0;
 }
 .banner {
   color: $color;
-  padding: 100px 0;
+  padding: 120px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   @media (max-width: 500px) {
-    padding: 30px 0;
+    padding: 5px 0;
   }
   > .actions {
     padding: 8px 0;
 
     a {
-      margin: 0 8px;
+      margin: 50px 20px;
       color: white;
       background: $black;
       display: inline-block;
