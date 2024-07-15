@@ -100,7 +100,9 @@ $color: #9d34e0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  @media (max-width: 500px) {
+    padding: 30px 0;
+  }
   > .actions {
     padding: 8px 0;
 
