@@ -41,13 +41,14 @@ $color:#9d34e0;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -14px 14px 14px;
   > .logo {
     display: flex;
     max-width: 8em;
-    margin-right: auto;
+    margin-right:auto;
     flex-wrap: wrap;
     align-items: center;
     >svg{
@@ -75,12 +76,13 @@ $color:#9d34e0;
   }
   @media (max-width: 500px) {
     position: relative;
+    box-shadow: none;
     > .menu {
       display: none;
     }
     > .logo {
       max-width: 6em;
-      margin: 0 auto;
+      margin: 16px auto;
       >h3{
         margin: 0 auto;
       }

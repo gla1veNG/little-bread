@@ -3,8 +3,8 @@
     <div class="topnavAndBanner">
       <Topnav/>
       <div class="banner">
-        <h1>面板UI</h1>
-        <h2>一个厉害的UI框架</h2>
+        <h1>BreadUI</h1>
+        <h2>一个厉害的 Vue3 UI框架</h2>
         <p class="actions">
           <a href="https://github.com/gla1veNG/little-bread">GitHub</a>
           <router-link to="/doc">开始</router-link>
@@ -57,7 +57,7 @@ $color: #9d34e0;
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
-  margin: 64px auto;
+  margin: 64px 16px;
   @media (min-width: 800px) {
     width: 800px;
   }

@@ -68,6 +68,12 @@ $aside-index:10;
     padding-left: 156px;
     @media (max-width: 500px) {
       padding: 0;
+      aside{
+        box-shadow: rgba(0, 0, 0, 0.1) -14px -14px 14px 14px ;
+        >h2{
+          margin-top: 16px;
+        }
+      }
     }
   }
 }
@@ -87,7 +93,7 @@ $aside-index:10;
 }
 
 aside {
-  background: lightblue;
+  background: white;
   width: 120px;
   padding: 16px 0;
   position: fixed;
@@ -96,8 +102,9 @@ aside {
   padding-top: 70px;
   height: 100%;
   z-index: $aside-index;
+
   > h2 {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     padding: 0 10px;
   }
 
