@@ -74,6 +74,7 @@ $color:#9d34e0;
     display: none;
   }
   @media (max-width: 500px) {
+    position: relative;
     > .menu {
       display: none;
     }
