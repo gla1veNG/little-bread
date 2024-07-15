@@ -21,7 +21,7 @@
             <router-link to="/doc/switch">Switch组件</router-link>
           </li>
           <li>
-            <router-link to="/doc/button">Buttom组件</router-link>
+            <router-link to="/doc/button">Button组件</router-link>
           </li>
           <li>
             <router-link to="/doc/dialog">Dialog组件</router-link>
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-$aside-index:10;
+$aside-index: 10;
 .layout {
   display: flex;
   flex-direction: column;
@@ -68,9 +68,10 @@ $aside-index:10;
     padding-left: 156px;
     @media (max-width: 500px) {
       padding: 0;
-      aside{
-        box-shadow: rgba(0, 0, 0, 0.1) -14px -14px 14px 14px ;
-        >h2{
+      aside {
+        width: 120px;
+        box-shadow: rgba(0, 0, 0, 0.1) -14px -14px 14px 14px;
+        > h2 {
           margin-top: 16px;
         }
       }
@@ -94,12 +95,11 @@ $aside-index:10;
 
 aside {
   background: white;
-  width: 120px;
-  padding: 16px 0;
+  width: 150px;
+  padding-top:80px;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 70px;
   height: 100%;
   z-index: $aside-index;
 
@@ -110,13 +110,21 @@ aside {
 
   > ol {
     > li {
-      >a{
+      > a {
         display: block;
-        padding: 4px 16px;
+        padding: 10px 16px;
         text-decoration: none !important;
+
       }
-      .router-link-active{
-        background: white;
+      .router-link-active {
+        background: #f4e1ff;
+      }
+    }
+  }
+  >ol{
+    >li{
+      >a:hover{
+        color: #9d34e0;
       }
     }
   }
