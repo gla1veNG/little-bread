@@ -37,6 +37,7 @@ onMounted(()=>{
     indicator.value.style.left = left + 'px';
   });
 })
+    //@ts-ignore
     const defaults = context.slots.default();
     defaults.forEach((tag) => {
       if (tag.type != Tab) {
