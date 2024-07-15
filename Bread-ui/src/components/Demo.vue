@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $border-color: #d9d9d9;
 .demo {
   border: 1px solid $border-color;
