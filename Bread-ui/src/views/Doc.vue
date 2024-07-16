@@ -118,6 +118,8 @@ aside {
       }
       .router-link-active {
         background: #f4e1ff;
+        margin-left: 1px;
+        border-left: plum 4px solid;
       }
     }
   }

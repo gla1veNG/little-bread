@@ -25,6 +25,7 @@ export default {
   setup() {
     const asideVisible = inject<Ref<boolean>>('asideVisible');
     const toggleMenu = () => {
+      //@ts-ignore
       asideVisible.value = !asideVisible.value;
     };
     return {toggleMenu};
