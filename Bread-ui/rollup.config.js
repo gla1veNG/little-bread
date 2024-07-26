@@ -1,6 +1,6 @@
-import esbuild from 'rollup-plugin-esbuild'
-
 import vue from 'rollup-plugin-vue'
+
+import esbuild from 'rollup-plugin-esbuild'
 
 import scss from 'rollup-plugin-scss'
 
@@ -35,6 +35,12 @@ export default {
 
         scss({include: /\.scss$/, sass: dartSass}),
 
+        vue({
+
+            include: /\.vue$/,
+
+        }),
+
         esbuild({
 
             include: /\.[jt]s$/,
@@ -44,12 +50,6 @@ export default {
             target: 'es2015'
 
         }),
-
-        vue({
-
-            include: /\.vue$/,
-
-        })
 
     ],
 

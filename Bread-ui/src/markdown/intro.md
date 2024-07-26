@@ -1,6 +1,6 @@
 # 介绍
 
-bread UI 是一款基于  <font color='red'> Vue 3 </font> 和 <font color='red'> TypeScript </font>  的 UI 组件库。
+Bread UI 是一款基于  <font color='red'> Vue 3 </font> 和 <font color='red'> TypeScript </font>  的 UI 组件库。
 
 这款组件库其实是我为了总结自己学习 Vue 3 的技术经验而写的，全程亲手编写，尽量不采用第三方库，包括你现在看到的这个官网也几乎都是我自己写的。
 
