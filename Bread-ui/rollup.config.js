@@ -1,11 +1,7 @@
-import vue from 'rollup-plugin-vue'
-
 import esbuild from 'rollup-plugin-esbuild'
-
+import vue from 'rollup-plugin-vue'
 import scss from 'rollup-plugin-scss'
-
 import dartSass from 'sass';
-
 import {terser} from "rollup-plugin-terser"
 
 
@@ -23,7 +19,7 @@ export default {
 
         name: 'Bread-ui',
 
-        file: 'dist/lib/Bread-ui.js',
+        file: 'dist/lib/Bread.js',
 
         format: 'umd',
 
@@ -34,13 +30,11 @@ export default {
     plugins: [
 
         scss({include: /\.scss$/, sass: dartSass}),
-
         vue({
 
             include: /\.vue$/,
 
         }),
-
         esbuild({
 
             include: /\.[jt]s$/,

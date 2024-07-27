@@ -27,6 +27,7 @@ $h2: $h - 4px;
   width: $h*2;
   border: none;
   background: #bfbfbf;
+  border-radius: math.div($h, 2);
   position: relative;
   > span {
     position: absolute;
